@@ -1,4 +1,4 @@
-Flixter::Application.routes.draw do
+BetterFlixter::Application.routes.draw do
   devise_for :users
   root 'static_pages#index'
   resources :courses, only: [:index, :show]
@@ -10,7 +10,6 @@ Flixter::Application.routes.draw do
       resources :sections, only: [:new, :create]
     end
   end
-end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
